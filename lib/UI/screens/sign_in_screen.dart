@@ -63,21 +63,21 @@ class _SignInScreenState extends State<SignInScreen> {
   }
 
   void _onTapForgotPassword() {
-    Navigator.push(context, MaterialPageRoute(builder: (context)=>ForgotPasswordScreen(),),);
+    Navigator.push(context, MaterialPageRoute(builder: (context)=>const ForgotPasswordScreen(),),);
   }
   Widget _sign_in_form() {
     return Column(
       children: [
         TextFormField(
           keyboardType: TextInputType.emailAddress,
-          decoration: InputDecoration(hintText: 'Email'),
+          decoration: const InputDecoration(hintText: 'Email'),
         ),
         const SizedBox(
           height: 8,
         ),
         TextFormField(
           obscureText: true,
-          decoration: InputDecoration(hintText: 'Password'),
+          decoration: const InputDecoration(hintText: 'Password'),
         ),
         const SizedBox(
           height: 24,
@@ -92,7 +92,7 @@ class _SignInScreenState extends State<SignInScreen> {
   Widget _SignUp() {
     return RichText(
       text: TextSpan(
-        style: TextStyle(
+        style: const TextStyle(
           color: Colors.black,
           fontWeight: FontWeight.w600,
           fontSize: 14,
@@ -102,7 +102,7 @@ class _SignInScreenState extends State<SignInScreen> {
         children: [
           TextSpan(
             text: 'Sign Up',
-            style: TextStyle(color: AppColor.themeColor),
+            style: const TextStyle(color: AppColor.themeColor),
             recognizer: TapGestureRecognizer()..onTap = _onTapsignUpButton,
           )
         ],
@@ -113,9 +113,9 @@ class _SignInScreenState extends State<SignInScreen> {
 
 
   void _onTapNextButton() {
-    Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=> MainBottomNavBarScreen(),), (value)=>false,);
+    Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=> const MainBottomNavBarScreen(),), (value)=>false,);
   }
   void _onTapsignUpButton() {
-  Navigator.push(context, MaterialPageRoute(builder: (context)=> SignUpScreen(),),);
+  Navigator.push(context, MaterialPageRoute(builder: (context)=> const SignUpScreen(),),);
   }
 }

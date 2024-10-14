@@ -39,7 +39,7 @@ class _ForgotPasswordOTPScreenState extends State<ForgotPasswordOTPScreen> {
                 const SizedBox(
                   height: 10,
                 ),
-                Text(
+                const Text(
                   'A 6-digit Verification OTP has been sent to your e-mail address',
                   style: TextStyle(color: Colors.grey),
                 ),
@@ -69,7 +69,7 @@ class _ForgotPasswordOTPScreenState extends State<ForgotPasswordOTPScreen> {
   Widget _SignIn() {
     return RichText(
       text: TextSpan(
-        style: TextStyle(
+        style: const TextStyle(
           color: Colors.black,
           fontWeight: FontWeight.w600,
           fontSize: 14,
@@ -79,7 +79,7 @@ class _ForgotPasswordOTPScreenState extends State<ForgotPasswordOTPScreen> {
         children: [
           TextSpan(
             text: 'Sign In',
-            style: TextStyle(color: AppColor.themeColor),
+            style: const TextStyle(color: AppColor.themeColor),
             recognizer: TapGestureRecognizer()..onTap = _onTapsignInButton,
           )
         ],
@@ -104,7 +104,7 @@ class _ForgotPasswordOTPScreenState extends State<ForgotPasswordOTPScreen> {
             inactiveFillColor: Colors.white,
             selectedFillColor: Colors.white,
           ),
-          animationDuration: Duration(milliseconds: 300),
+          animationDuration: const Duration(milliseconds: 300),
           backgroundColor: Colors.transparent,
           enableActiveFill: true,
           appContext: context,
@@ -121,14 +121,14 @@ class _ForgotPasswordOTPScreenState extends State<ForgotPasswordOTPScreen> {
   }
 
   void _onTapNextButton() {
-    Navigator.push(context, MaterialPageRoute(builder: (context)=> ResetPasswordScreen(),),);
+    Navigator.push(context, MaterialPageRoute(builder: (context)=> const ResetPasswordScreen(),),);
   }
 
   void _onTapsignInButton() {
     Navigator.pushAndRemoveUntil(
       context,
       MaterialPageRoute(
-        builder: (context) => SignInScreen(),
+        builder: (context) => const SignInScreen(),
       ),
       (_) => false,
     );

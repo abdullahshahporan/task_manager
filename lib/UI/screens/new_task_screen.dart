@@ -22,7 +22,7 @@ class _NewTaskScreenState extends State<NewTaskScreen> {
             child: ListView.separated(
               itemCount: 10,
               itemBuilder: (context, index) {
-                return TaskCard();
+                return const TaskCard();
               },
               separatorBuilder: (context, index) {
                 return const SizedBox(
@@ -35,14 +35,14 @@ class _NewTaskScreenState extends State<NewTaskScreen> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _onTapFABButton,
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
     );
   }
 
   Widget _buildSummarySection() {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
+    return const Padding(
+      padding: EdgeInsets.all(8.0),
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Row(
@@ -73,7 +73,7 @@ class _NewTaskScreenState extends State<NewTaskScreen> {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => AddNewTaskScreen(),
+        builder: (context) => const AddNewTaskScreen(),
       ),
     );
   }

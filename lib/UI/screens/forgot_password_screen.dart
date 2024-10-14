@@ -34,7 +34,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                       ?.copyWith(fontWeight: FontWeight.w500),
                 ),
                 const SizedBox(height: 10,),
-                Text('A 6-digit Verification OTP will be sent to your e-mail address',
+                const Text('A 6-digit Verification OTP will be sent to your e-mail address',
                 style: TextStyle(
                   color: Colors.grey
                 ),),
@@ -67,7 +67,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
   Widget _SignIn() {
     return RichText(
       text: TextSpan(
-        style: TextStyle(
+        style: const TextStyle(
           color: Colors.black,
           fontWeight: FontWeight.w600,
           fontSize: 14,
@@ -77,7 +77,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
         children: [
           TextSpan(
             text: 'Sign In',
-            style: TextStyle(color: AppColor.themeColor),
+            style: const TextStyle(color: AppColor.themeColor),
             recognizer: TapGestureRecognizer()..onTap = _onTapsignInButton,
           )
         ],
@@ -90,7 +90,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
       children: [
         TextFormField(
           keyboardType: TextInputType.emailAddress,
-          decoration: InputDecoration(hintText: 'Email'),
+          decoration: const InputDecoration(hintText: 'Email'),
         ),
 
         const SizedBox(
@@ -104,7 +104,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
     );
   }
 void _onTapNextButton(){
- Navigator.push(context, MaterialPageRoute(builder: (context)=>ForgotPasswordOTPScreen(),),);
+ Navigator.push(context, MaterialPageRoute(builder: (context)=>const ForgotPasswordOTPScreen(),),);
 }
 
   void _onTapsignInButton() {

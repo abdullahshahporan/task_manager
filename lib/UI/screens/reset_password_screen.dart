@@ -35,7 +35,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
                       ?.copyWith(fontWeight: FontWeight.w500),
                 ),
                 const SizedBox(height: 10,),
-                Text('minimum number of password should be 8 letters',
+                const Text('minimum number of password should be 8 letters',
                   style: TextStyle(
                       color: Colors.grey
                   ),),
@@ -68,7 +68,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
   Widget _SignIn() {
     return RichText(
       text: TextSpan(
-        style: TextStyle(
+        style: const TextStyle(
           color: Colors.black,
           fontWeight: FontWeight.w600,
           fontSize: 14,
@@ -78,7 +78,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
         children: [
           TextSpan(
             text: 'Sign In',
-            style: TextStyle(color: AppColor.themeColor),
+            style: const TextStyle(color: AppColor.themeColor),
             recognizer: TapGestureRecognizer()..onTap = _onTapsignInButton,
           )
         ],
@@ -91,12 +91,12 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
       children: [
         TextFormField(
 
-          decoration: InputDecoration(hintText: 'Password'),
+          decoration: const InputDecoration(hintText: 'Password'),
         ),
 const SizedBox(height: 8,),
         TextFormField(
           keyboardType: TextInputType.emailAddress,
-          decoration: InputDecoration(hintText: 'Confirm Password'),
+          decoration: const InputDecoration(hintText: 'Confirm Password'),
         ),
         const SizedBox(
           height: 24,
@@ -112,7 +112,7 @@ const SizedBox(height: 8,),
     Navigator.pushAndRemoveUntil(
       context,
       MaterialPageRoute(
-        builder: (context) => SignInScreen(),
+        builder: (context) => const SignInScreen(),
       ),
           (_) => false,
     );
@@ -122,7 +122,7 @@ const SizedBox(height: 8,),
     Navigator.pushAndRemoveUntil(
       context,
       MaterialPageRoute(
-        builder: (context) => SignInScreen(),
+        builder: (context) => const SignInScreen(),
       ),
           (_) => false,
     );

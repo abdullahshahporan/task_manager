@@ -12,7 +12,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: TaskManagerAppBar(
+      appBar: const TaskManagerAppBar(
         isProfileScreenOpen: true,
       ),
       body: SingleChildScrollView(
@@ -34,29 +34,29 @@ class _ProfileScreenState extends State<ProfileScreen> {
               const SizedBox(height: 8,),
               TextFormField(
                 keyboardType: TextInputType.emailAddress,
-                decoration: InputDecoration(hintText: 'Email'),
+                decoration: const InputDecoration(hintText: 'Email'),
               ),
               const SizedBox(height: 8,),
               TextFormField(
                 keyboardType: TextInputType.emailAddress,
-                decoration: InputDecoration(hintText: 'First Name'),
+                decoration: const InputDecoration(hintText: 'First Name'),
               ),
               const SizedBox(height: 8,),
               TextFormField(
                 keyboardType: TextInputType.emailAddress,
-                decoration: InputDecoration(hintText: 'Last Name'),
+                decoration: const InputDecoration(hintText: 'Last Name'),
               ),
               const SizedBox(height: 8,),
               TextFormField(
                 keyboardType: TextInputType.emailAddress,
-                decoration: InputDecoration(hintText: 'Phone No'),
+                decoration: const InputDecoration(hintText: 'Phone No'),
               ),
               const SizedBox(
                 height: 8,
               ),
               TextFormField(
                 obscureText: true,
-                decoration: InputDecoration(hintText: 'Password'),
+                decoration: const InputDecoration(hintText: 'Password'),
               ),
               const SizedBox(
                 height: 24,
@@ -87,7 +87,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           Container(
             width: 100,
             height: 50,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.grey,
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(8),
@@ -95,7 +95,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
             ),
             alignment: Alignment.center,
-            child: Text('Photo',style: TextStyle(
+            child: const Text('Photo',style: TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.w600,
               fontSize: 16,

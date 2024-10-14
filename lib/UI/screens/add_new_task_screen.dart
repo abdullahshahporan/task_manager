@@ -13,7 +13,7 @@ class _AddNewTaskScreenState extends State<AddNewTaskScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: TaskManagerAppBar(),
+      appBar: const TaskManagerAppBar(),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(24.0),
@@ -33,7 +33,7 @@ class _AddNewTaskScreenState extends State<AddNewTaskScreen> {
                 height: 24,
               ),
               TextFormField(
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   hintText: 'Tite',
                 ),
               ),
@@ -42,7 +42,7 @@ class _AddNewTaskScreenState extends State<AddNewTaskScreen> {
               ),
               TextFormField(
                 maxLines: 5,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   hintText: 'Description',
                 ),
               ),
@@ -51,7 +51,7 @@ class _AddNewTaskScreenState extends State<AddNewTaskScreen> {
               ),
               ElevatedButton(
                 onPressed: () {},
-                child: Icon(Icons.arrow_forward_ios_outlined),
+                child: const Icon(Icons.arrow_forward_ios_outlined),
               ),
             ],
           ),
